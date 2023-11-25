@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+* .entry{
+    color:  black;
+}
+
+:root {
+    --cor001: #68A1F8;
+    --cor002: #2F2F2F;
+    --cor002-1: #3b3b3b;
+    --font001: 'Archivo', sans-serif;
+    --font002: 'Inter', sans-serif;
+}
+
+html, body, main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.archivo {
+    font-family: var(--font001);
+    font-size: 400;
+}
+
+.inter {
+    font-family: var(--font002);
+    font-size: 400;
+}
+
+/* Desktop daqui para baixo */
+
+header {
+    display: flex;
+    background-color: var(--cor002);
+    height: 80px;
+    padding: 0px 80px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header img {
+    width: 88px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 16px;
+}
+
+nav button {
+    background-color: var(--cor002);
+    border: 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#main-box {
+    text-align: center;
+    color: var(--cor002);
+}
+
+#main-box h2 {
+    font-weight: 700;
+    font-size: 72px;
+    color: var(--cor002);
+}
+
+#main-box h3 {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--cor002);
+}
+
+#img-bg {
+    background-image: url(../img/artwork\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 420px;
+}
+
+#img-bg img {
+    margin: 15px auto;
+    width: 349px;
+}
+
+#img-bg p {
+    font-size: 32px;
+}
+
+#img-bg button {
+    margin: 22px auto;
+    background-color: #68A1F8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+    border-radius: 16px;
+    height: 36px;
+    width: 180px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#card-box {
+    max-width: 1280px;
+    min-width: 873px;
+    margin: auto;
+    display: flex;
+    padding: 80px;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+    padding: 24px;
+    gap: 40px;
+}
+
+.card > p, .card > #c-card > p {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+}
+
+.h-card {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+    gap: 33px;
+    text-align: left;
+}
+
+.i-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 72px;
+    width: 72px;
+    flex: 0 0 auto;
+    border-radius: 16px;
+}
+
+#card-1 {
+    height: 299px;
+    width: 304px;
+}
+
+#card-2 {
+    flex: 1;
+}
+
+#c-card {
+    display: flex;
+    gap: 40px;
+}
+
+.social {
+    display: flex;
+    gap: 28px;
+    width: 356px;
+    margin: 40px auto 64px;
+}
+
+.social div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor002);
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+}
+
+#contact {
+    display: flex;
+    position: relative;
+    background-color: var(--cor002);
+    height: 530px;
+    padding: 80px;
+}
+
+#inputs img {
+    margin: 15px 0px;
+    width: 349px;
+}
+
+#contact p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+}
+
+form {
+    max-width: 788px;
+}
+
+fieldset {
+    margin-top: 32px;
+    max-width: 788px;
+    border: 0px;
+}
+
+legend {
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.entry {
+    padding: 12px 16px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+#f-social {
+    position: absolute;
+    margin: 0px;
+    top: 100px;
+    right: 80px;
+}
+
+#r-box {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    gap: 32px;
+    bottom: 92px;
+    right: 80px;
+}
+
+#r-button {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor002);
+    border: 0px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: opacity .2s ease-in;
+}
+
+#r-button.fade {
+    opacity: 1;
+}
+
+#r-button img {
+    width: 64px;
+    height: 64px;
+}
+
+#r-text {
+    visibility: hidden;
+    width: 0;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 48px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: width .3s ease-in, visibility .3s ease-in;
+}
+
+#r-text.open {
+    visibility: visible;
+    width: 316px;
+}
