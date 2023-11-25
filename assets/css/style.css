@@ -12,7 +12,7 @@
 
 :root {
     --cor001: #68A1F8;
-    --cor002: #2F2F2F;
+    --cor002: black;
     --cor002-1: #3b3b3b;
     --font001: 'Archivo', sans-serif;
     --font002: 'Inter', sans-serif;
@@ -125,7 +125,7 @@ nav button {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #2F2F2F;
+    background-color: black;
     border-radius: 8px;
     padding: 24px;
     gap: 40px;
@@ -211,6 +211,7 @@ form {
     max-width: 788px;
 }
 
+
 fieldset {
     margin-top: 32px;
     max-width: 788px;
@@ -282,3 +283,40 @@ legend {
     visibility: visible;
     width: 316px;
 }
+ /* BOTÃO DE ENVIAR O EMAIL */
+.btn-message{
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn-message:hover {
+    transition: 1s ease-in-out;
+    background: white;
+    color: black;
+  }
+  
+  .btn-message:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn-message span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
