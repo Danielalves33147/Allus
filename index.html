@@ -69,14 +69,15 @@
             <div id="inputs">
                 <img src="assets/img/Logo Allus branca (sem fundo).png" alt="Logo-allus">
                 <p>Desde 2023</p>
-                <form action="https://formsubmit.co/allussocial@outlook.com" method="post">
+                <form action="https://api.staticforms.xyz/submit" method="post">
                         <legend>Entre em contato por e-mail</legend>
-                        <input class="entry" type="text" placeholder="Seu nome" required>
-                        <input class="entry" type="email" placeholder="Seu e-mail" required>
-                        <textarea class="entry" name="c-msg" id="c-msg" cols="30" rows="10" placeholder="Mensagem" required></textarea>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://danielalves33147.github.io/Allus/">
-                        <button onclick="alert()" type="submit">Enviar</button>
+                        <input class="entry" type="text" placeholder="Seu nome" autocomplete="off" required>
+                        <input class="entry" type="email" placeholder="Seu e-mail" autocomplete="off" required>
+                        <textarea class="entry" name= "message" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                        <button class="btn-message" onclick="alert()" type="submit">Enviar</button>
+
+                        <input type="hidden" name="accessKey" value="f11d98e8-b779-40e2-bcb6-0957b587ba86">
+                        <input type="hidden" name="redirectTo" value="https://danielalves33147.github.io/Allus">
                 </form>
             </div>
             <div id="f-social" class="social">
@@ -92,7 +93,7 @@
         function alert(){
             Swal.fire({
             position: "top-end",
-            icon: "success",
+            icon: "success", 
             title: "Sua Mensagem foi enviada",
             showConfirmButton: false,
             timer: 1500
