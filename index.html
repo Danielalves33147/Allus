@@ -76,7 +76,7 @@
                         <textarea class="entry" name="c-msg" id="c-msg" cols="30" rows="10" placeholder="Mensagem" required></textarea>
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://danielalves33147.github.io/Allus/">
-                        <button type="submit">Enviar</button>
+                        <button onclick="alert()" type="submit">Enviar</button>
                 </form>
             </div>
             <div id="f-social" class="social">
@@ -87,5 +87,17 @@
         </section>
     </main>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function alert(){
+            Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Sua Mensagem foi enviada",
+            showConfirmButton: false,
+            timer: 1500
+        });
+        }
+    </script>
 </body>
 </html>
